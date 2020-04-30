@@ -8,11 +8,13 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-
+// import Vuex from 'vuex'
+// Vue.use(Vuex)
 export default {
   name: 'Home',
   components: {
     HelloWorld
   }
 }
+  // console.log(store.state.count)
 </script>

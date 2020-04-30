@@ -5,10 +5,18 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    count: 10,
+    hoge: true
   },
   mutations: {
+    increment (state) {
+      state.count = state.count + 1
+    }
   },
   actions: {
+    incrementAction ({commit}) {
+      commit('increment')
+    }
   },
   modules: {
   }
